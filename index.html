@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Create New Account | Tune</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/introjs.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,400&display=swap" rel="stylesheet">
+  </head>
+  
+  <body>
+  <div class="banner">
+	<img class="hamburger" src="images/hamburger.png"/>
+          <img class="logo" src="images/logo.png"/>
+        </div> 
+<h1>CREATE NEW ACCOUNT</h1>
+<h3>IT'S COMPLETELY FREE</h3>
+        <div class="btn-block">
+        <button type="start" href="/"><a class="btn btn-large btn-success" href="javascript:void(0);" onclick="javascript:introJs().setOption('showProgress', true).start();">Show me how</a></button>
+        </div>
+    <div class="testbox">
+      <form action="/"> 
+        <div class="item" data-step="1" data-intro="Please enter your first and last name.">
+          <p style="color:white;">Name</p>
+          <div class="name-item">
+            <input type="text" name="name" placeholder="First" />
+            <input type="text" name="name" placeholder="Last" />
+          </div>
+        </div>
+        <div class="contact-item">
+          <div class="item" data-step="2" data-intro="Please enter your email. Don't worry, we promise not to spam you.">
+            <p style="color:white;">Email</p>
+            <input type="text" name="name"/>
+          </div>
+          <div class="item"data-step="3" data-intro="Please enter your phone number in the format shown below.">
+            <p style="color:white;">Phone</p>
+            <input type="text" name="name"placeholder="(xxx)-xxx-xxxx"/>
+          </div>
+        </div>
+        <div class="item" data-step="4" data-intro="Your username must be a minimum of 3 characters, maximum of 25.  ">
+          <p style="color:white;">Username</p>
+          <input type="text" name="name"/>
+        </div>
+        <div class="item" data-step="5" data-intro="Your password must include the following requirements: Minimum length is 8 characters, maximum is 30. At least 1 upper-case character. At least 1 lower-case character. At least one number. One special Character: ! # $ % * ? @ & ">
+          <p style="color:white;">Password</p>
+          <textarea rows="3" required></textarea>
+          <p style="color:white;">Confirm Password</p>
+          <textarea rows="3" required></textarea>
+        </div>
+	<div class="item" data-step="6" data-intro="You must agree to the Terms and Conditions">
+         <label class="container" style="color:white;">I agree to the Terms and Conditions 
+  		<input type="checkbox">
+  		<span class="checkmark"></span>
+	 </label>
+	</div>
+        <div class="btn-block" data-step="7" data-intro="Submit the form.">
+          <button type="submit" href="/">CREATE ACCOUNT</button>
+        </div>
+      </form>
+    </div>
+    <script src="js/intro.js"></script>
+  </body>
+</html>
